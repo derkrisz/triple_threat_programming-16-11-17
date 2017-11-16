@@ -75,10 +75,12 @@ INSERT INTO passengers_flights (passenger_id, flight_id) VALUES (3, 3);
 -- ON flights.airport_id = airports.id
 -- WHERE flights.number = 'BA1453'
 
--- q5
+-- q5, q6
 -- SELECT flights.number, passengers.first_name, passengers.last_name FROM flights
 -- INNER JOIN passengers_flights
 -- ON passengers_flights.flight_id = flights.id
 -- INNER JOIN passengers
 -- on passengers_flights.passenger_id = passengers.id
--- WHERE passengers.id = 3
+-- WHERE (passengers.id = 3) OR (passengers.first_name = 'Sian')
+
+-- q7 two new columns in flights table to add destinations, time etc
